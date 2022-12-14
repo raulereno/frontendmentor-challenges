@@ -9,7 +9,7 @@ const PreviewProject = ({ project }) => {
         <div className="info_project">
           <h4>{project.name}</h4>
           <div>
-            <ul>
+            <ul className="tecnologies">
               {project.tecnologies.map((e) => (
                 <li>{e}</li>
               ))}

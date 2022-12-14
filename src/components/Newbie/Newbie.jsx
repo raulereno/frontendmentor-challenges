@@ -6,7 +6,7 @@ const Newbie = () => {
   return (
     <div className="container_newbie">
       <h2>Newbie</h2>
-      <ul>
+      <ul className="newbies_projects">
         {projects
           .filter((e) => e.difficulty.includes("Newbie"))
           .map((e, i) => {

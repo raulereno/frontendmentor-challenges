@@ -4,7 +4,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  ul {
+  .newbies_projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
     list-style: none;
     a {
       text-decoration: none;
@@ -38,9 +41,11 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      ul {
+      .tecnologies {
         padding: 0;
         display: flex;
+        list-style: none;
+
         li {
           margin-right: 15px;
         }

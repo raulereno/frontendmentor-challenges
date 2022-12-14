@@ -10,6 +10,12 @@ export let projects = [
     route: "challenge1",
   },
   {
-    difficulty: "hard",
+    name: "Orden Summary Component",
+    difficulty: "Newbie",
+    image: "./images/newbie/ordenSummaryComponent/design/desktop-preview.jpg",
+    description:
+      "A perfect project for newbies who are starting to build confidence with layouts!",
+    tecnologies: ["HMTL", "CSS"],
+    route: "challenge2",
   },
 ];
