@@ -10,9 +10,8 @@ function App() {
       <NavbarBoots />
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route exact path="/newbie" element={<Newbie />} />
+        <Route path="/newbie" element={<Newbie />} />
         <Route
-          exact
           path="/newbie/challenge1"
           element={<ProductPreviewCardComponent />}
         />
