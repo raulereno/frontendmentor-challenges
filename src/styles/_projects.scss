@@ -1,0 +1,55 @@
+.container_newbie {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.container_previewProject {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 450px;
+  border-radius: 12px;
+
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.259);
+
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .info_project {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      ul {
+        padding: 0;
+        display: flex;
+        li {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+  }
+}
