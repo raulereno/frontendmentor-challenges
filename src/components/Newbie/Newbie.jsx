@@ -5,7 +5,7 @@ import PreviewProject from "../PreviewProject/PreviewProject";
 const Newbie = () => {
   return (
     <div className="container_newbie">
-      <h2>Newbie</h2>
+      <h2>Newbie Projects</h2>
       <ul className="newbies_projects">
         {projects
           .filter((e) => e.difficulty.includes("Newbie"))

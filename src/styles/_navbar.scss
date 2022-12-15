@@ -2,5 +2,27 @@
   background-color: rgba(128, 128, 128, 0.13);
   .navbar-collapse {
     justify-content: center;
+    .navbar-nav {
+      a {
+        background-color: rgba(128, 128, 128, 0.411);
+        color: black;
+        margin-right: 25px;
+        border-radius: 12px;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.855);
+        }
+      }
+      .dropdown-menu.show {
+        background-color: rgb(103, 103, 103);
+        a {
+          color: white;
+          background-color: rgb(103, 103, 103);
+          text-align: center;
+          &:hover {
+            background-color: rgb(135, 135, 135);
+          }
+        }
+      }
+    }
   }
 }

@@ -4,3 +4,24 @@
 //Newbie
 @import "./newbie/productPreviewCardComponent";
 @import "./newbie/orderSummaryComponent";
+@import "./newbie/interactiveRatingComponent";
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container_guru,
+.container_advanced,
+.container_intermediate,
+.container_junior {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  h2,
+  h3 {
+    color: white;
+  }
+}

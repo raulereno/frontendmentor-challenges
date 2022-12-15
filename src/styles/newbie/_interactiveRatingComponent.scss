@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/*
+font-family: 'Overpass', sans-serif;
+*/
+
+.container_interactiveRating {
+  background-color: hsl(216, 12%, 8%);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  .interactiveRating {
+    width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    h3 {
+      font-weight: 400;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .star {
+      background-color: hsla(216, 12%, 54%, 0.14);
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      margin-bottom: 20px;
+    }
+
+    .container_rating {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background-color: hsla(216, 12%, 54%, 0.14);
+        border-radius: 100%;
+        &:hover {
+          cursor: pointer;
+          background-color: hsl(25, 97%, 53%);
+        }
+      }
+      .selected {
+        background-color: hsl(25, 97%, 53%);
+      }
+      .previus {
+        background-color: hsl(216, 12%, 54%);
+      }
+    }
+    .submitButton {
+      background-color: hsl(25, 97%, 53%);
+      border: 0;
+      color: white;
+      width: 100%;
+      height: 45px;
+      border-radius: 500px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+      }
+    }
+  }
+}
+
+.container_submit {
+  width: 350px;
+  background-color: hsl(213, 19%, 18%);
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .rating_submit {
+    background-color: hsla(216, 12%, 54%, 0.14);
+    color: hsl(25, 97%, 53%);
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  .thanks_text {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .text {
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+  }
+  .back {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 15px;
+    &:hover {
+      background-color: hsla(216, 12%, 54%, 0.14);
+      cursor: pointer;
+      border-radius: 15px;
+    }
+  }
+}
