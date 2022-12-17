@@ -28,4 +28,13 @@ export let projects = [
     tecnologies: ["HMTL", "CSS", "JS"],
     route: "challenge3",
   },
+  {
+    name: "Tip Calculator App",
+    difficulty: "Junior",
+    image: "./images/junior/tip-calculator-app-main/design/desktop-preview.jpg",
+    description:
+      "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
+    tecnologies: ["HMTL", "CSS", "JS"],
+    route: "challenge4",
+  },
 ];

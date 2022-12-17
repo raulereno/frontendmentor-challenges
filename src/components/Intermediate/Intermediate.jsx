@@ -8,7 +8,7 @@ const Intermediate = () => {
   );
 
   return (
-    <div className="container_intermediate">
+    <div className="container_projects">
       <h2>Intermediate Projects</h2>
       <ul className="intermediate_projects">
         {juniorProjects.length ? (

@@ -3,6 +3,7 @@ import Advanced from "./components/Advanced/Advanced";
 import Guru from "./components/Guru/Guru";
 import Intermediate from "./components/Intermediate/Intermediate";
 import Junior from "./components/Junior/Junior";
+import TipCalculatorApp from "./components/Junior/projects/TipCalculatorApp";
 import Landing from "./components/Lading/Landing";
 import NavbarBoots from "./components/Navbar/NavbarBoots";
 import Newbie from "./components/Newbie/Newbie";
@@ -22,7 +23,7 @@ function App() {
         <Route path="/advanced" element={<Advanced />} />
         <Route path="/guru" element={<Guru />} />
 
-        {/* Route to newbies projects */}
+        {/* Routes to newbies projects */}
         <Route
           path="/newbie/challenge1"
           element={<ProductPreviewCardComponent />}
@@ -32,6 +33,8 @@ function App() {
           path="/newbie/challenge3"
           element={<InteractiveRatingComponent />}
         />
+        {/* Routes to junior projects */}
+        <Route path="/junior/challenge4" element={<TipCalculatorApp />} />
       </Routes>
     </>
   );

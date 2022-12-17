@@ -6,7 +6,7 @@ const Guru = () => {
   const juniorProjects = projects.filter((e) => e.difficulty.includes("Guru"));
 
   return (
-    <div className="container_guru">
+    <div className="container_projects">
       <h2>Guru Projects</h2>
       <ul className="guru_projects">
         {juniorProjects.length ? (

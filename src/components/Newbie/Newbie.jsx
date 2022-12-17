@@ -4,7 +4,7 @@ import PreviewProject from "../PreviewProject/PreviewProject";
 
 const Newbie = () => {
   return (
-    <div className="container_newbie">
+    <div className="container_projects">
       <h2>Newbie Projects</h2>
       <ul className="newbies_projects">
         {projects

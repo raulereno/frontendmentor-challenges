@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/*
+font-family: 'Space Mono', monospace;
+*/
+//Primary
+$strongCyan: hsl(172, 67%, 45%);
+//Neutral
+$veryDarkCyan: hsl(183, 100%, 15%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+$grayishCyan: hsl(184, 14%, 56%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$veryLightGrayishCyan: hsl(189, 41%, 97%);
+
+#container_tipCalculator {
+  background-color: $lightGrayishCyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  p,
+  input,
+  button,
+  span,
+  label {
+    font-family: "Space Mono", monospace;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  #logo {
+    width: 70px;
+    height: 70px;
+    background-image: url("../../images/junior/tip-calculator-app-main/images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 25px;
+  }
+  #tipCalculator {
+    background-color: white;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 25px;
+    border-radius: 12px;
+    .bill {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      label {
+        margin: 0;
+        font-size: 12px;
+      }
+      .input_bill {
+        display: flex;
+        align-items: center;
+        background-color: $veryLightGrayishCyan;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+
+        #logoMoney {
+          background-image: url("../../images/junior/tip-calculator-app-main/images/icon-dollar.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 15px;
+          height: 15px;
+          width: 10%;
+          margin-left: 5px;
+        }
+        input {
+          width: 280px;
+          text-align: end;
+          font-size: 18px;
+          background-color: $veryLightGrayishCyan;
+          border: 0;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          border: 2px solid $strongCyan;
+          cursor: pointer;
+        }
+      }
+    }
+    .percentage {
+      span {
+        font-size: 12px;
+      }
+      ul {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        gap: 10px;
+        li {
+          background-color: $veryDarkCyan;
+          width: 92px;
+          font-family: "Space Mono", monospace;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
+          padding: 2px 0;
+          font-weight: 700;
+          font-size: 19px;
+          height: 37px;
+          &:hover {
+            cursor: pointer;
+            background-color: $lightGrayishCyan;
+            color: $veryDarkCyan;
+          }
+        }
+        .inputCustom {
+          background-color: transparent;
+          padding: 0;
+          input {
+            text-align: end;
+            background-color: $veryLightGrayishCyan;
+            width: 92px;
+
+            font-size: 18px;
+            border: 0;
+            border-radius: 3px;
+            height: 37px;
+
+            &:focus {
+              outline: 2px solid $strongCyan;
+            }
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        .selectedPercentage {
+          background-color: $strongCyan;
+          color: $veryDarkCyan;
+        }
+      }
+    }
+    .people {
+      div {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 12px;
+          margin: 0;
+        }
+        .error {
+          font-size: 10px;
+
+          color: red;
+        }
+      }
+      .input_people {
+        display: flex;
+        align-items: center;
+        background-color: $veryLightGrayishCyan;
+        padding: 4px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+
+        #logo_people {
+          background-image: url("../../images/junior/tip-calculator-app-main/images/icon-person.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 13px;
+          height: 13px;
+          width: 10%;
+          margin-left: 5px;
+        }
+        input {
+          width: 90%;
+          text-align: end;
+          background-color: $veryLightGrayishCyan;
+          border: 0;
+          font-size: 18px;
+          &:hover {
+            cursor: pointer;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        &:hover {
+          border: 2px solid $strongCyan;
+          cursor: pointer;
+        }
+      }
+      .error_input {
+        border: 1px solid red;
+      }
+    }
+    .showTips {
+      align-self: center;
+      background-color: $veryDarkCyan;
+      width: 280px;
+      color: white;
+      height: 250px;
+      padding: 23px 23px 15px 23px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 8px;
+
+      .tipPerPerson {
+        margin-bottom: 18px;
+      }
+      .tipPerPerson,
+      .totalPerPerson {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 12px;
+          margin: 0;
+          line-height: 13px;
+        }
+        .perPerson {
+          font-size: 10px;
+
+          opacity: 0.5;
+        }
+      }
+      .result_numbers {
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        color: $strongCyan;
+        font-weight: 700;
+      }
+      .resetButton {
+        width: 100%;
+        background-color: $strongCyan;
+        border: 0;
+        font-size: 12.5px;
+        font-weight: 700;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        &:hover {
+          background-color: $lightGrayishCyan;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #container_tipCalculator {
+    height: auto;
+    padding-bottom: 15px;
+    #logo {
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+    #tipCalculator {
+      width: auto;
+      flex-direction: column;
+
+      .percentage {
+        ul {
+          grid-template-columns: repeat(2, 1fr);
+          li,
+          .inputCustom input {
+            width: 120px;
+          }
+        }
+      }
+      .people {
+        margin: 15px 0 25px 0;
+      }
+      .showTips {
+        height: auto;
+        .container_results {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PreviewProject = ({ project }) => {
   return (
-    <Link to={`/newbie/${project.route}`}>
+    <Link to={`/${project.difficulty}/${project.route}`}>
       <div className="container_previewProject">
         <img src={project.image} alt="" />
         <div className="info_project">
