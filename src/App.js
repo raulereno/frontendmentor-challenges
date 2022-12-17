@@ -10,6 +10,7 @@ import Newbie from "./components/Newbie/Newbie";
 import InteractiveRatingComponent from "./components/Newbie/projects/InteractiveRatingComponent";
 import OrdenSummaryComponent from "./components/Newbie/projects/OrdenSummaryComponent";
 import ProductPreviewCardComponent from "./components/Newbie/projects/Product-preview-card-component";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/intermediate" element={<Intermediate />} />
         <Route path="/advanced" element={<Advanced />} />
         <Route path="/guru" element={<Guru />} />
+        <Route path="/about" element={<About />} />
 
         {/* Routes to newbies projects */}
         <Route

@@ -1,13 +1,16 @@
 .container_projects {
-  padding-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #303030;
   height: 95vh;
+  padding-bottom: 15px;
   h2 {
     color: white;
+    border: 3px solid #f8c6c4;
+    padding: 10px;
+    margin-bottom: 15px;
   }
   h3 {
     color: white;
@@ -18,6 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     list-style: none;
+    padding: 0;
     a {
       text-decoration: none;
       color: black;
@@ -67,6 +71,15 @@
     h4 {
       font-size: 19px;
       margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .container_projects {
+    height: auto;
+    .newbies_projects,
+    .junior_projects {
+      grid-template-columns: 1fr;
     }
   }
 }

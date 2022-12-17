@@ -1,19 +1,28 @@
 .navbar {
-  background-color: rgba(128, 128, 128, 0.13);
+  background-color: rgba(36, 36, 36, 0.964);
+  padding: 15px 0;
   .navbar-collapse {
     justify-content: center;
     .navbar-nav {
       a {
-        background-color: rgba(128, 128, 128, 0.411);
+        background-color: rgba(109, 109, 109, 0.468);
         color: black;
         margin-right: 25px;
         border-radius: 12px;
+        color: white;
         &:hover {
-          background-color: rgba(128, 128, 128, 0.855);
+          transform: scale(1.05);
+          background-color: rgba(215, 215, 215, 0.855);
+          font-weight: 500;
         }
+      }
+      .dropdown-menu {
+        position: absolute;
+        width: 100%;
       }
       .dropdown-menu.show {
         background-color: rgb(103, 103, 103);
+        z-index: 99;
         a {
           color: white;
           background-color: rgb(103, 103, 103);
@@ -21,6 +30,20 @@
           &:hover {
             background-color: rgb(135, 135, 135);
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
+      .navbar-nav {
+        a {
+          text-align: center;
+          background-color: transparent;
         }
       }
     }

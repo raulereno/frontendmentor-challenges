@@ -54,6 +54,7 @@ const TipCalculatorApp = () => {
 
   useEffect(() => {
     calculateTip();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [form]);
 
   return (
@@ -178,7 +179,15 @@ const TipCalculatorApp = () => {
             </div>
           </div>
 
-          <button className="resetButton" onClick={() => resetForm()}>
+          <button
+            className={`resetButton ${
+              form.bill === "0" &&
+              form.people === "0" &&
+              form.percentage === "0" &&
+              "emptyCalculator"
+            }`}
+            onClick={() => resetForm()}
+          >
             RESET
           </button>
         </div>
