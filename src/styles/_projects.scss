@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   background-color: #303030;
-  height: 95vh;
-  padding-bottom: 15px;
+  height: 100vh;
+
   h2 {
     color: white;
     border: 3px solid #f8c6c4;
@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   width: 330px;
-  height: 450px;
+  height: 500px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.688);
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.503);
@@ -60,10 +60,11 @@
       .tecnologies {
         padding: 0;
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
 
         li {
-          margin-right: 15px;
+          margin-right: 10px;
         }
       }
     }
