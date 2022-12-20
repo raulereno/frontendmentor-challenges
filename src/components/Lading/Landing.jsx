@@ -9,7 +9,7 @@ const Landing = () => {
         <img
           src="https://mis-retos-erv.netlify.app/src/img/banner.png"
           alt=""
-          srcset=""
+          srcSet=""
         />
         <h1>Challenges</h1>
       </div>
@@ -19,11 +19,11 @@ const Landing = () => {
           {projects
             .slice(projects.length - 3)
             .reverse()
-            .map((e) => {
+            .map((e, i) => {
               return (
-                <Link to={`${e.difficulty}/${e.route}`}>
+                <Link key={i} to={`${e.difficulty}/${e.route}`}>
                   <li>
-                    <img src={e.image} alt="" />
+                    <img srcSet={e.image} alt="Last projects" />
                     <p>{e.name}</p>
                   </li>
                 </Link>

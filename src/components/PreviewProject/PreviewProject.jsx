@@ -63,8 +63,10 @@ const PreviewProject = ({ project }) => {
           <h4>{project.name}</h4>
           <div className={`${setClassDifficulty(project.difficulty)}`}>
             <ul className="tecnologies">
-              {project.tecnologies.map((e) => (
-                <li className={`${setClassTecnologie(e)}`}>{e}</li>
+              {project.tecnologies.map((e, i) => (
+                <li key={i} className={`${setClassTecnologie(e)}`}>
+                  {e}
+                </li>
               ))}
             </ul>
             <p>
