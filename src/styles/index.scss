@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800;900&display=swap");
+/*
+font-family: 'Raleway', sans-serif;
+*/
+* {
+  font-family: "Raleway", sans-serif;
+}
 @import "landing";
 @import "navbar";
 @import "projects";
@@ -9,9 +16,10 @@
 //Junior
 @import "./junior/tipCalculatorApp";
 @import "./junior/adviceGeneratorApp";
+@import "./junior/interactiveCardDetail";
 
-* {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+html {
+  background-color: #303030;
 }
 
 .container_guru,

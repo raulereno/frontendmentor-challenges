@@ -8,7 +8,7 @@ const Advanced = () => {
   );
 
   return (
-    <div className="ccontainer_projects">
+    <div className="container_projects">
       <h2>Advanced Projects</h2>
       <ul className="advanced_projects">
         {juniorProjects.length ? (

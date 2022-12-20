@@ -1,38 +1,47 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavbarBoots() {
+  const [showDrop, setShowDrop] = useState(false);
+
+  const showDropdown = () => {
+    setShowDrop(!showDrop);
+  };
+
   return (
-    <Navbar bsPrefix={"navbar"} expand="lg">
-      <Navbar.Toggle aria-controls="navbarScroll" />
-      <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="me-auto my-2 my-lg-0"
-          style={{ maxHeight: "100px" }}
-          navbarScroll
-        >
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
-          <NavDropdown title="Difficulty" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="/newbie">Newbie</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="/junior">Junior</NavDropdown.Item>
-            <NavDropdown.Divider />
-
-            <NavDropdown.Item href="/intermediate">
-              Intermediate
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-
-            <NavDropdown.Item href="/advanced">Advanced</NavDropdown.Item>
-            <NavDropdown.Divider />
-
-            <NavDropdown.Item href="/guru">Guru</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav className="navbar">
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li className={`container_dropdown`} onClick={showDropdown}>
+          Difficulty
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+          </svg>
+          <ul className={`dropdown ${showDrop ? "showDrop" : ""}`}>
+            <li>
+              <Link to="/newbie">Newbie</Link>
+            </li>
+            <li>
+              <Link to="/junior">Junior</Link>
+            </li>
+            <li>
+              <Link to="/intermediate">Intermediate</Link>
+            </li>
+            <li>
+              <Link to="/advanced">Advanced</Link>
+            </li>
+            <li>
+              <Link to="/guru">Guru</Link>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

@@ -1,51 +1,56 @@
 .navbar {
   background-color: rgba(36, 36, 36, 0.964);
-  padding: 15px 0;
-  .navbar-collapse {
-    justify-content: center;
-    .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: white;
+      background-color: hsla(0, 0%, 43%, 0.468);
+      padding: 6px;
+      margin-right: 8px;
+      border-radius: 5px;
+      cursor: pointer;
       a {
-        background-color: rgba(109, 109, 109, 0.468);
-        color: black;
-        margin-right: 25px;
-        border-radius: 12px;
         color: white;
+        text-decoration: none;
+      }
+    }
+    .container_dropdown {
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 3px;
+        width: 10px;
+        fill: rgb(255, 255, 255);
+      }
+    }
+    .dropdown {
+      flex-direction: column;
+      position: absolute;
+      bottom: -180px;
+      z-index: 99;
+      background-color: transparent;
+      display: none;
+      li {
+        background-color: hsl(0, 0%, 43%);
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid grey;
         &:hover {
-          transform: scale(1.05);
-          background-color: rgba(215, 215, 215, 0.855);
-          font-weight: 500;
-        }
-      }
-      .dropdown-menu {
-        position: absolute;
-        width: 100%;
-      }
-      .dropdown-menu.show {
-        background-color: rgb(103, 103, 103);
-        z-index: 99;
-        a {
-          color: white;
-          background-color: rgb(103, 103, 103);
-          text-align: center;
-          &:hover {
-            background-color: rgb(135, 135, 135);
-          }
+          transform: scale(1);
+          background-color: #bdbdbd;
         }
       }
     }
-  }
-}
-@media screen and (max-width: 500px) {
-  .navbar {
-    .navbar-collapse {
+    .dropdown.showDrop {
       display: flex;
-      justify-content: center;
-      .navbar-nav {
-        a {
-          text-align: center;
-          background-color: transparent;
-        }
-      }
     }
   }
 }

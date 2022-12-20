@@ -6,7 +6,7 @@ export let projects = [
     difficulty: "Newbie",
     description:
       "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects. I use React!",
-    tecnologies: ["HMTL", "CSS"],
+    tecnologies: ["HTML", "CSS"],
     route: "challenge1",
   },
   {
@@ -15,7 +15,7 @@ export let projects = [
     image: "./images/newbie/ordenSummaryComponent/design/desktop-preview.jpg",
     description:
       "A perfect project for newbies who are starting to build confidence with layouts. I use React!",
-    tecnologies: ["HMTL", "CSS"],
+    tecnologies: ["HTML", "CSS"],
     route: "challenge2",
   },
   {
@@ -25,7 +25,7 @@ export let projects = [
       "./images/newbie/interactiveRatingComponent/design/desktop-preview.jpg",
     description:
       "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript. I use React!",
-    tecnologies: ["HMTL", "CSS", "JS"],
+    tecnologies: ["HTML", "CSS", "JS"],
     route: "challenge3",
   },
   {
@@ -34,7 +34,7 @@ export let projects = [
     image: "./images/junior/tip-calculator-app-main/design/desktop-preview.jpg",
     description:
       "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test. I use React!",
-    tecnologies: ["HMTL", "CSS", "JS"],
+    tecnologies: ["HTML", "CSS", "JS"],
     route: "challenge4",
   },
   {
@@ -44,7 +44,17 @@ export let projects = [
       "./images/junior/advice-generator-app-main/design/desktop-preview.jpg",
     description:
       "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice. I use React with Redux Toolkit",
-    tecnologies: ["HMTL", "CSS", "JS", "API"],
+    tecnologies: ["HTML", "CSS", "JS", "API"],
     route: "challenge5",
+  },
+  {
+    name: "Interactive Card Details Form",
+    difficulty: "Junior",
+    image:
+      "./images/junior/interactive-card-details-form-main/design/desktop-preview.jpg",
+    description:
+      "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+    tecnologies: ["HTML", "CSS", "JS"],
+    route: "challenge6",
   },
 ];

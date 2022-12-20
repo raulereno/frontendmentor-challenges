@@ -4,8 +4,9 @@
   align-items: center;
   justify-content: center;
   background-color: #303030;
-  height: 100vh;
-
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
   h2 {
     color: white;
     border: 3px solid #f8c6c4;
@@ -68,9 +69,56 @@
         }
       }
     }
+    .previewNewbie,
+    .previewJunior,
+    .previewIntermediate,
+    .previewAdvanced {
+      .tecnologies {
+        li {
+          font-weight: 600;
+        }
+      }
+      p {
+        background-color: #4c8d99;
+        padding: 3px;
+        font-weight: 600;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        span {
+          background-color: rgb(193, 193, 193);
+          padding: 3px;
+          font-size: 15px;
+          border-radius: 5px;
+          color: #4c8d99;
+        }
+      }
+    }
+    .previewJunior {
+      p {
+        background-color: #6e8c26;
+        span {
+          color: #6e8c26;
+        }
+      }
+    }
+
+    .previewHTML {
+      color: #488691;
+    }
+    .previewCSS {
+      color: #3e54a3;
+    }
+    .previewJS {
+      color: #ac5476;
+    }
+    .previewAPI {
+      color: #6e8c26;
+    }
 
     h4 {
-      font-size: 19px;
+      font-size: 22px;
       margin-bottom: 30px;
     }
   }

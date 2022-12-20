@@ -12,6 +12,7 @@ import OrdenSummaryComponent from "./components/Newbie/projects/OrdenSummaryComp
 import ProductPreviewCardComponent from "./components/Newbie/projects/Product-preview-card-component";
 import About from "./components/About/About";
 import AdviceGeneratorApp from "./components/Junior/projects/AdviceGeneratorApp";
+import InteractiveCardDetailForm from "./components/Junior/projects/InteractiveCardDetailForm";
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
         {/* Routes to junior projects */}
         <Route path="/junior/challenge4" element={<TipCalculatorApp />} />
         <Route path="/junior/challenge5" element={<AdviceGeneratorApp />} />
+        <Route
+          path="/junior/challenge6"
+          element={<InteractiveCardDetailForm />}
+        />
       </Routes>
     </>
   );
