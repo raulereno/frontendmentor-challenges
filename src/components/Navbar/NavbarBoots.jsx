@@ -11,10 +11,10 @@ function NavbarBoots() {
   return (
     <nav className="navbar">
       <ul>
-        <li>
+        <li className="itemNav">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="itemNav">
           <Link to="/about">About</Link>
         </li>
         <li className={`container_dropdown`} onClick={showDropdown}>
