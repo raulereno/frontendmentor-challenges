@@ -55,7 +55,7 @@ const InteractiveCardDetailForm = () => {
     cvc: "",
   });
   const [errors, setErrors] = useState({});
-  const [swap, setSwap] = useState(true);
+  const [swap, setSwap] = useState(false);
 
   const handleInputChange = (event) => {
     const name = event.target.name;
