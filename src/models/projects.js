@@ -67,4 +67,14 @@ export let projects = [
     tecnologies: ["HTML", "CSS", "JS", "API"],
     route: "challenge7",
   },
+  {
+    name: "Calculator App",
+    difficulty: "Intermediate",
+    image:
+      "./images/intermediate/calculator-app-main/design/desktop-preview.jpg",
+    description:
+      "This calculator app will be a great test of your CSS and JS skills especially. If you're wanting to practice using Grid, this challenge will be perfect for you!",
+    tecnologies: ["HTML", "CSS", "JS"],
+    route: "challenge8",
+  },
 ];

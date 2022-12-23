@@ -14,6 +14,7 @@ import About from "./components/About/About";
 import AdviceGeneratorApp from "./components/Junior/projects/AdviceGeneratorApp";
 import InteractiveCardDetailForm from "./components/Junior/projects/InteractiveCardDetailForm";
 import IpAdressTracker from "./components/Intermediate/projects/IpAdressTracker/IpAdressTracker";
+import CalculatorApp from "./components/Intermediate/projects/CalculatorApp/CalculatorApp";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         />
         {/* Routes to intermediate projects */}
         <Route path="/intermediate/challenge7" element={<IpAdressTracker />} />
+        <Route path="/intermediate/challenge8" element={<CalculatorApp />} />
       </Routes>
     </>
   );
