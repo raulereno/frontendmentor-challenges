@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getIp, getLocation } from "../../../../redux/slices/ipTrackerSlice";
 import MapView from "./MapView";
-import Swal from "sweetalert2";
 
 const IpAdressTracker = () => {
   const [position, setPosition] = useState([0, 0]);
@@ -40,12 +39,6 @@ const IpAdressTracker = () => {
       dispatch(getLocation({ ip: inputIp.ip, domain: "" }));
     }
   };
-  useEffect(() => {
-    Swal.fire({
-      icon: "info",
-      text: "Allows you to detect your location if you wish(Top left screen), or enter any IP or domain you want to find",
-    });
-  }, []);
 
   useEffect(() => {
     dispatch(getIp());
