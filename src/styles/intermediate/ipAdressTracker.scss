@@ -1,0 +1,186 @@
+$veryDarkGray: hsl(0, 0%, 17%);
+$darkGray: hsl(0, 0%, 59%);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+//font-family: 'Rubik', sans-serif;
+#container_ipAdressTracker {
+  * {
+    font-family: "Rubik", sans-serif;
+  }
+  #backHeader {
+    background-image: url("../../images/intermediate/ip-address-tracker-master/images/pattern-bg.png");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+    h1 {
+      font-size: 22px;
+      color: white;
+      font-family: "Rubik", sans-serif;
+    }
+    #container_infoApi {
+      background-color: white;
+      width: 650px;
+      position: absolute;
+      bottom: -50px;
+      z-index: 10;
+      height: 110px;
+      border-radius: 12px;
+      #infoApi {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
+        margin-top: 20px;
+        .ipBox,
+        .locationBox,
+        .timezoneBox {
+          border-right: 0.8px solid rgba(128, 128, 128, 0.377);
+          padding-right: 30px;
+        }
+        .locationBox {
+          padding-right: 0;
+          p {
+            margin-bottom: 0;
+            font-size: 15px;
+          }
+        }
+        div {
+          height: 65px;
+          display: flex;
+          flex-direction: column;
+          padding: 0 20px;
+          p:first-child {
+            font-size: 10px;
+            color: $darkGray;
+            font-weight: 400;
+            margin-bottom: 0;
+          }
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 2px;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    #searchIp {
+      input {
+        width: 350px;
+        height: 45px;
+        border: 0;
+        border-radius: 10px 0 0 10px;
+        font-size: 13.5px;
+        margin-top: 16px;
+        padding-left: 12px;
+        &.inputError {
+          border: 2.5px solid rgb(158, 0, 0);
+        }
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      button {
+        height: 45px;
+
+        width: 45px;
+
+        background-color: black;
+        border: 0;
+        border-radius: 0 10px 10px 0;
+        &.disableButton {
+          background-color: rgb(81, 81, 81);
+        }
+        &:hover {
+          background-color: rgb(81, 81, 81);
+        }
+        svg {
+          transform: scale(0.8);
+        }
+      }
+    }
+    .error {
+      font-size: 12px;
+      color: rgb(158, 0, 0);
+    }
+  }
+  #map {
+    div {
+      z-index: 5;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #container_ipAdressTracker {
+    #backHeader {
+      height: 250px;
+      #container_infoApi {
+        width: 88%;
+        height: 250px;
+        bottom: -130px;
+        padding-bottom: 10px;
+        #infoApi {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 8px;
+          .ipBox,
+          .locationBox,
+          .timezoneBox,
+          .ispBox {
+            border-right: 0;
+            padding-right: 0;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          .locationBox {
+            span {
+              display: inline;
+              margin-left: 5px;
+            }
+          }
+          div {
+            padding: 0;
+            p:first-child {
+              font-size: 12px;
+              color: $darkGray;
+              font-weight: 400;
+              margin-bottom: 0;
+            }
+            p {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      #searchIp {
+        width: 90%;
+        input {
+          margin-top: 10px;
+          height: 50px;
+          width: 280px;
+        }
+        button {
+          height: 50px;
+          width: 52px;
+          svg {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

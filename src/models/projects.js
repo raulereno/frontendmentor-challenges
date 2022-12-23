@@ -57,4 +57,14 @@ export let projects = [
     tecnologies: ["HTML", "CSS", "JS"],
     route: "challenge6",
   },
+  {
+    name: "IP Address Tracker",
+    difficulty: "Intermediate",
+    image:
+      "./images/intermediate/ip-address-tracker-master/design/desktop-preview.jpg",
+    description:
+      "In this challenge, you'll be using two separate APIs together to create an IP Address Tracking app.",
+    tecnologies: ["HTML", "CSS", "JS", "API"],
+    route: "challenge7",
+  },
 ];

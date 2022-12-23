@@ -13,6 +13,7 @@ import ProductPreviewCardComponent from "./components/Newbie/projects/Product-pr
 import About from "./components/About/About";
 import AdviceGeneratorApp from "./components/Junior/projects/AdviceGeneratorApp";
 import InteractiveCardDetailForm from "./components/Junior/projects/InteractiveCardDetailForm";
+import IpAdressTracker from "./components/Intermediate/projects/IpAdressTracker/IpAdressTracker";
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
           path="/junior/challenge6"
           element={<InteractiveCardDetailForm />}
         />
+        {/* Routes to intermediate projects */}
+        <Route path="/intermediate/challenge7" element={<IpAdressTracker />} />
       </Routes>
     </>
   );

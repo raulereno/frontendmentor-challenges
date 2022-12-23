@@ -8,12 +8,15 @@ const initialState = {
   isLoading: true,
 };
 
-export const getRandomAdvice = createAsyncThunk("advice/getAdvice", () => {
-  return axios
-    .get(url)
-    .then((res) => res.data.slip)
-    .catch((err) => console.log(err));
-});
+export const getRandomAdvice = createAsyncThunk(
+  "advice/getAdvice",
+  async () => {
+    return await axios
+      .get(url)
+      .then((res) => res.data.slip)
+      .catch((err) => console.log(err));
+  }
+);
 
 export const adviceSlice = createSlice({
   name: "adviceGenerator",
