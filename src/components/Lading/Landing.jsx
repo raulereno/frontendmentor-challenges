@@ -13,22 +13,20 @@ const Landing = () => {
         />
         <h1>Challenges</h1>
       </div>
-      <div className="container_lastProjects">
-        <h2>Last Projects</h2>
-        <ul className="previewLastProjects">
-          {projects
-            .slice(projects.length - 3)
-            .reverse()
-            .map((e, i) => {
-              return (
-                <Link key={i} to={`${e.difficulty}/${e.route}`}>
-                  <li>
-                    <img srcSet={e.image} alt="Last projects" />
-                    <p>{e.name}</p>
-                  </li>
-                </Link>
-              );
-            })}
+      <div className="container_allProjects">
+        <h2>All Projects</h2>
+        <ul className="previewAllProjects">
+          {projects.reverse().map((e, i) => {
+            return (
+              <Link key={i} to={`${e.difficulty}/${e.route}`}>
+                <li>
+                  <img srcSet={e.image} alt="Last projects" />
+                  <p>{e.name}</p>
+                  <p className="difficulty">Difficulty:{e.difficulty}</p>
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
     </div>
